@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#work-section" class="scroll-content">Content</a></li>
+      <li><a href="#about" class="scroll-content">About Me</a></li>
+      <li><a href="#projects" class="scroll-content">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fullscreen Intro Section -->
+  <section class="intro" id="intro">
+    <div class="blur-background"></div>
+    <div class="intro-content">
+      <h1 class="interactive-text">
+        <span>H</span><span>i</span><span>,</span>
+        <span>&nbsp;</span>
+        <span>M</span><span>y</span>
+        <span>&nbsp;</span>
+        <span>N</span><span>a</span><span>m</span><span>e</span>
+        <span>&nbsp;</span>
+        <span>i</span><span>s</span>
+      </h1>
+      <h2 class="interactive-text">
+        <span>A</span><span>b</span><span>d</span><span>u</span><span>l</span><span>a</span>
+        <span>&nbsp;</span>
+        <span>A</span><span>m</span><span>e</span><span>e</span><span>n</span>
+      </h2>
+      <p class="interactive-text">
+        <span>a</span><span>n</span><span>d</span>
+        <span>&nbsp;</span>
+        <span>t</span><span>h</span><span>i</span><span>s</span>
+        <span>&nbsp;</span>
+        <span>i</span><span>s</span>
+        <span>&nbsp;</span>
+        <span>m</span><span>y</span>
+        <span>&nbsp;</span>
+        <span>p</span><span>e</span><span>r</span><span>s</span><span>o</span><span>n</span><span>a</span><span>l</span>
+        <span>&nbsp;</span>
+        <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+      </p>
+      <a href="#work-section" class="scroll-btn" id="scroll-btn">Scroll Down</a>
+    </div>
+  </section>
+
+  <section class="selected-work" id="work-section">
+    <h1 class="title">Content</h1>
+    <div class="work-grid">
+      <div class="work-item">
+        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-04-02 021224.png" alt="VisionBored Image">
+        <h2>About Me</h2>
+        <p>Learn more about me</p>
+      </div>
+      <div class="work-item">
+        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-08-11 220733.png" alt="Cached Image">
+        <h2>Projects</h2>
+        <p>Check out what projects I've done</p>
+      </div>
+      <div class="work-item">
+        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-09-15 031228.png" alt="Ciri Image">
+        <h2>Contact me</h2>
+        <p>Reach out to me regarding questions and business inquiries</p>
+      </div>
+    </div>
+    
+<!-- About Me Section -->
+<section class="about-me" id="about">
+  <h1 class="title">About Me</h1>
+  <div class="about-content">
+    <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-04-02 021224.png" alt="Profile Image" class="profile-image">
+    <div class="bio">
+      <h2>Hi, I'm Abdula Ameen</h2>
+      <p>I'm an Arab American undergraduate student at the University of Michigan - Dearborn, pursuing a Bachelor of Science in Computer Science with a concentration in Artificial Intelligence.</p>
+      <p>My academic journey includes a variety of courses, such as Intro to Computer Science, Deep Learning, Computer Organizations, Data Structures and Algorithms, Operating Systems, Computer Networks, and Probability and Statistics.</p>
+      <p>I have experience working as an iCode Instructor and as a Pharmacy Technician at CVS. I enjoy programming in several languages including C++, C#, SQL, JavaScript, Java, and Python. I also work with frameworks like Flask and Jupyter.</p>
+      <p>In my spare time, I engage in 3D modeling, play soccer, create digital art, and enjoy watching movies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h1 class="title">My Projects</h1>
+  <div class="projects-grid">
+    <div class="project-item">
+      <h2>Weather Forecasting System</h2>
+      <p>Developed and implemented a Weather Forecasting system using Tkinter, integrating two external API services to fetch real-time data, enhancing data accuracy and reliability by 15%.</p>
+      <p>Enhanced the GUI application by enabling multi-day weather forecasts and support for simultaneous display of weather data for multiple locations, expanding usability and functionality by 30%.</p>
+    </div>
+    <div class="project-item">
+      <h2>Stock Price Prediction Model</h2>
+      <p>Developed and trained a Python-based machine learning model using neural networks for stock price prediction, achieving a 10% improvement in accuracy.</p>
+      <p>Optimized the model for efficiency and reducing computation time by 25%, resulting in more timely and accurate predictions for a portfolio of 30 stocks.</p>
+    </div>
+    <div class="project-item">
+      <h2>Movie Recommendation System</h2>
+      <p>Implemented a basic recommendation system using Python and Pandas, focusing on movie recommendations.</p>
+      <p>Utilized Rotten Tomatoes data aggregation to enhance personalized recommendation algorithms, boosting user satisfaction by 10%.</p>
+    </div>
+    <div class="project-item">
+      <h2>Wordle Replica</h2>
+      <p>Developed a replica of a popular word game using Wordle’s word list, focusing on both front-end design and back-end functionality, achieving a 95% accuracy in word selection and game logic replication through full stack development.</p>
+      <p>Implemented efficient algorithms resulting in a 30% reduction in response time compared to similar projects with greater attention to detail.</p>
+    </div>
+  </div>
+
+    <!-- Play Button -->
+    <button class="play-btn" id="play-btn">Play</button>
+
+    <!-- Audio Element -->
+    <audio id="audio-player">
+      <source src="C:\Users\Ameen\Downloads\OP.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
