@@ -15,7 +15,7 @@
       <li><a href="#work-section" class="scroll-content">Content</a></li>
       <li><a href="#about" class="scroll-content">About Me</a></li>
       <li><a href="#projects" class="scroll-content">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#contact" class="scroll-content">Contact</a></li>
     </ul>
   </nav>
 
@@ -114,6 +114,41 @@
       <p>Implemented efficient algorithms resulting in a 30% reduction in response time compared to similar projects with greater attention to detail.</p>
     </div>
   </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-content">
+      <div class="contact-info">
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out to me!</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
     <!-- Play Button -->
     <button class="play-btn" id="play-btn">Play</button>

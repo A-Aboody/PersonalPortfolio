@@ -127,13 +127,13 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.05); /* Slightly increased scale for a softer effect */
+      transform: scale(1.11); /* Slightly increased scale for a softer effect */
     }
   }
   
   /* Change color on Hover */
   .interactive-text span:hover {
-    color: #a9a9a9; /* Change each letter to dark grey when hovered */
+    color: #d7d3ca; /* Change each letter to dark grey when hovered */
   }
   
   /* Selected Work Section */
@@ -284,21 +284,25 @@
   .bio {
     max-width: 600px;
     text-align: left;
-    background-color: #000000cc; /* Dark grey backdrop with transparency */
+    background-color: #2b2a28; /* Dark grey backdrop with transparency */
     padding: 20px; /* Add some padding around the text */
     border-radius: 10px; /* Rounded corners */
     color: #ffffff; /* Text color for better contrast */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
   }
-
+  
   .bio:hover {
-    transform: scale(1.5);
+    transform: scale(1.65);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }
   
-  .title {
+  
+  .title { /*Title at the top of each page*/
     font-size: 3.5rem;
     margin-bottom: 50px;
     color: #ffffff;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #7dac7d; /* Change color and thickness as needed */
   }
   
   /* Projects Section */
@@ -363,3 +367,81 @@
     background-color: rgba(255, 255, 255, 0.8); /* Changes background on hover */
     color: black; /* Changes text color on hover */
   }
+
+  /* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #d7d3ca; /* Matching background color */
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #2b2a28; /* Dark grey background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #7dac7d; /* Light green for labels */
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 2px solid #7dac7d; /* Light green border */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #121212; /* Text color */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffffff; /* White border on focus */
+}
+
+.send-btn {
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #00d9a1;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #00d9a1;
+  color: #121212;
+}
+
+/* Navigation Bar for Contact Page */
+.navbar a.active {
+  background-color: #00d9a1; /* Highlight active page link */
+  color: #121212;
+}
