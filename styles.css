@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/Users/abdulaameen/Downloads/Greyscale_Invert.jpg'); /* Updated image path */
+    background-image: url('../images/Greyscale_Invert.jpg'); /* Updated image path */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -195,35 +195,6 @@
     line-height: 1.6;
   }
   
-  /* Play Button */
-  .play-btn {
-    margin-top: 40px;
-    padding: 12px 25px;
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #00d9a1;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-  }
-  
-  .play-btn:hover {
-    background-color: #00d9a1;
-    color: #121212;
-  }
-  
-  .play-btn:after {
-    content: "▶"; /* Play icon */
-    font-size: 1.5rem;
-  }
-  
   /* Navigation Bar */
   .navbar {
     position: fixed; /* Keep it fixed */
@@ -292,7 +263,7 @@
   }
   
   .bio:hover {
-    transform: scale(1.65);
+    transform: scale(1.55);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   }
   
@@ -427,7 +398,7 @@
   padding: 12px 25px;
   background-color: transparent;
   color: #ffffff;
-  border: 2px solid #00d9a1;
+  border: 2px solid #7dac7d;
   border-radius: 50px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -436,12 +407,42 @@
 }
 
 .send-btn:hover {
-  background-color: #00d9a1;
+  background-color: #7dac7d;
   color: #121212;
 }
 
 /* Navigation Bar for Contact Page */
 .navbar a.active {
-  background-color: #00d9a1; /* Highlight active page link */
+  background-color: #7dac7d; /* Highlight active page link */
   color: #121212;
 }
+
+/* GitHub Button */
+.github-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2a28; /* Dark grey background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and icon */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+.github-btn img {
+  width: 24px; /* GitHub icon size */
+  height: 24px;
+}
+
+.github-btn:hover {
+  background-color: #7dac7d; /* Light green background on hover */
+  color: #121212; /* Dark text on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+

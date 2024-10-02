@@ -58,17 +58,17 @@
     <h1 class="title">Content</h1>
     <div class="work-grid">
       <div class="work-item">
-        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-04-02 021224.png" alt="About Me Image">
+        <img src="../images/PFP_AboutMe.jpg" alt="About Me Image">
         <h2>About Me</h2>
         <p>Learn more about me and my work</p>
       </div>
       <div class="work-item">
-        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-08-11 220733.png" alt="Projects Image">
+        <img src='../images/Projects_Logo.jpg' alt="Projects Image">
         <h2>Projects</h2>
         <p>Check out what projects I've done and what I'm working on</p>
       </div>
       <div class="work-item">
-        <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-09-15 031228.png" alt="Contact Me Image">
+        <img src="../images/Contact_Me.jpg" alt="Contact Me Image">
         <h2>Contact me</h2>
         <p>Reach out to me regarding questions and business inquiries</p>
       </div>
@@ -78,7 +78,7 @@
 <section class="about-me" id="about">
   <h1 class="title">About Me</h1>
   <div class="about-content">
-    <img src="C:\Users\Ameen\Pictures\Screenshots\Screenshot 2024-04-02 021224.png" alt="Profile Image" class="profile-image">
+    <img src="../images/PFP_AboutMe.jpg" alt="Profile Image" class="profile-image">
     <div class="bio">
       <h2>Hi, I'm Abdula Ameen</h2>
       <p>I'm an Arab American undergraduate student at the University of Michigan - Dearborn, pursuing a Bachelor of Science in Computer Science with a concentration in Artificial Intelligence.</p>
@@ -93,6 +93,11 @@
 <section class="projects" id="projects">
   <h1 class="title">My Projects</h1>
   <div class="projects-grid">
+    <div class="project-item">
+      <h2><i>Breast Cancer Prediction Model</i></h2>
+      <p>The project focuses on developing a machine learning model to assist in breast cancer diagnosis, using data analysis and predictive algorithms.</p>
+      <p><b><u>It's still in progress as I'm in the early stages of implementation and refining the model's approach to reading and processing data.</u></b></p>
+    </div>
     <div class="project-item">
       <h2><i>Weather Forecasting System</i></h2>
       <p>Developed and implemented a Weather Forecasting system using Tkinter, integrating two external API services to fetch real-time data, enhancing data accuracy and reliability by 15%.</p>
@@ -113,6 +118,10 @@
       <p>Developed a replica of a popular word game using Wordle’s word list, focusing on both front-end design and back-end functionality, achieving a 95% accuracy in word selection and game logic replication through full stack development.</p>
       <p>Implemented efficient algorithms resulting in a 30% reduction in response time compared to similar projects with greater attention to detail.</p>
     </div>
+    <!-- GitHub Link Button -->
+  <a href="https://github.com/A-Aboody" class="github-btn" target="_blank">
+    <img src="../images/Github_logo.jpg" alt="GitHub Logo"> View My GitHub
+  </a>
   </div>
 
   <!-- Contact Section -->
@@ -124,7 +133,7 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="contact-form" action="AbdulaAAmeen4@gmail.com" method="POST" enctype="text/plain">
+      <form class="contact-form" action="mailto:AbdulaAAmeen4@gmail.com" method="POST" enctype="text/plain">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
@@ -148,16 +157,6 @@
         <button type="submit" class="send-btn">Send Message</button>
       </form>
     </div>
-  </section>
-
-    <!-- Play Button -->
-    <button class="play-btn" id="play-btn">Play</button>
-
-    <!-- Audio Element -->
-    <audio id="audio-player">
-      <source src="C:\Users\Ameen\Downloads\OP.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
   </section>
 
   <script src="script.js"></script>
