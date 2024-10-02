@@ -37,11 +37,3 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         });
     });
 });
-
-// Play audio when the Play button is clicked
-const playButton = document.getElementById('play-btn');
-const audioPlayer = document.getElementById('audio-player');
-
-playButton.addEventListener('click', function() {
-    audioPlayer.play(); // Play the sound when the button is clicked
-});
